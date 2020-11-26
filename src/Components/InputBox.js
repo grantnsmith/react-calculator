@@ -1,7 +1,11 @@
 import React from "react";
 
-function InputBox() {
-  return <input type="text"></input>;
+function InputBox(props) {
+  return (
+    <div>
+      <input type="text" placeholder="0" value={props.userInput}></input>
+    </div>
+  );
 }
 
 export default InputBox;
