@@ -23,6 +23,9 @@ function App() {
     if (event.target.value.match(/[0-9]/)) {
       setUserInput(userInput + event.target.value);
     }
+    if (event.target.value === ".") {
+      setUserInput(userInput + event.target.value);
+    }
     if (event.target.value === "AC") {
       setUserInput("");
     }
