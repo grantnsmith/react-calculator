@@ -3,7 +3,12 @@ import React from "react";
 function InputBox(props) {
   return (
     <div>
-      <input type="text" placeholder="0" value={props.userInput}></input>
+      <input
+        className="input"
+        type="text"
+        placeholder="0"
+        value={props.userInput}
+      ></input>
     </div>
   );
 }

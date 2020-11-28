@@ -1,71 +1,92 @@
 [
   {
-    "display": 0,
-    "functionality": 0
-  },
-  {
-    "display": 1,
-    "functionality": 1
-  },
-  {
-    "display": 2,
-    "functionality": 2
-  },
-  {
-    "display": 3,
-    "functionality": 3
-  },
-  {
-    "display": 4,
-    "functionality": 4
-  },
-  {
-    "display": 5,
-    "functionality": 5
-  },
-  {
-    "display": 6,
-    "functionality": 6
-  },
-  {
-    "display": 7,
-    "functionality": 7
-  },
-  {
-    "display": 8,
-    "functionality": 8
-  },
-  {
-    "display": 9,
-    "functionality": 9
-  },
-
-  {
-    "display": "+",
-    "functionality": "+"
-  },
-  {
-    "display": "-",
-    "functionality": "-"
-  },
-  {
-    "display": "x",
-    "functionality": "*"
-  },
-  {
-    "display": "÷",
-    "functionality": "/"
-  },
-  {
-    "display": ".",
-    "functionality": "."
-  },
-  {
+    "id": "clear",
     "display": "AC",
     "functionality": "clear"
   },
   {
+    "id": "equal",
     "display": "=",
     "functionality": "="
+  },
+
+  {
+    "id": "plus",
+    "display": "+",
+    "functionality": "+"
+  },
+  {
+    "id": "one",
+    "display": 1,
+    "functionality": 1
+  },
+
+  {
+    "id": "two",
+    "display": 2,
+    "functionality": 2
+  },
+  {
+    "id": "minus",
+    "display": "-",
+    "functionality": "-"
+  },
+  {
+    "id": "three",
+    "display": 3,
+    "functionality": 3
+  },
+
+  {
+    "id": "four",
+    "display": 4,
+    "functionality": 4
+  },
+  {
+    "id": "multiply",
+    "display": "x",
+    "functionality": "*"
+  },
+  {
+    "id": "five",
+    "display": 5,
+    "functionality": 5
+  },
+
+  {
+    "id": "six",
+    "display": 6,
+    "functionality": 6
+  },
+  {
+    "id": "divide",
+    "display": "÷",
+    "functionality": "/"
+  },
+  {
+    "id": "seven",
+    "display": 7,
+    "functionality": 7
+  },
+
+  {
+    "id": "eight",
+    "display": 8,
+    "functionality": 8
+  },
+  {
+    "id": "decimal",
+    "display": ".",
+    "functionality": "."
+  },
+  {
+    "id": "nine",
+    "display": 9,
+    "functionality": 9
+  },
+  {
+    "id": "zero",
+    "display": 0,
+    "functionality": 0
   }
 ]
