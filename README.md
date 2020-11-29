@@ -9,7 +9,7 @@ I built a simple calculator using React without following any guides, just to se
 * More to come...
 
 ## Bugs and Additions
-* Build functionality to enable equations on the total of previous equation 
+* Connect to localStorage to save past equations.
 * Add additional operators (like %) and enable positive/negative button.
 
 
