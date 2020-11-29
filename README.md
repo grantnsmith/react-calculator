@@ -9,8 +9,7 @@ I built a simple calculator using React without following any guides, just to se
 * More to come...
 
 ## Bugs and Additions
-* After an equation is done, you have to click "AC" to then be able to start a new equation (otherwise it just adds the numbers to current total)
-* If you keep pressing equals after an equation is calculated, it keeps doing the same calcuation over and over
+* Build functionality to enable equations on the total of previous equation 
 * Add additional operators (like %) and enable positive/negative button.
 
 
