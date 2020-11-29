@@ -29,7 +29,7 @@ function App() {
 
   const onClick = (event) => {
     event.preventDefault();
-    // If an equation was just completed, the next button press clears input and adds the most current event value
+    // If an equation was just completed, a number button press clears input and adds the most current event value
     if (equationDone) {
       updateEquationState(false);
       setUserInput(event.target.value);
@@ -90,6 +90,7 @@ function App() {
         <InputBox userInput={userInput} onClick={onClick} />
         {buttons.map((buttons) => (
           <Button
+            key={buttons.display}
             id={buttons.id}
             onClick={onClick}
             display={buttons.display}

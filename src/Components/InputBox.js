@@ -8,6 +8,7 @@ function InputBox(props) {
         type="text"
         placeholder="0"
         value={props.userInput}
+        readOnly={true}
       ></input>
     </div>
   );
