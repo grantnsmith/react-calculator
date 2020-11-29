@@ -13,24 +13,28 @@ function App() {
     symbol: "",
     secondNum: "",
   });
+  const [equationDone, updateEquationState] = React.useState(false);
 
   // Calculate the equation after second number is updated in state
   React.useEffect(() => {
     if (equation.secondNum) {
       setUserInput(calculate(equation));
+      buildEquation({
+        firstNum: "",
+        symbol: "",
+        secondNum: "",
+      });
     }
   }, [equation]);
 
-  // Clear input and start new equation
-  // React.useEffect(() => {
-  //   if (typeof userInput === "number") {
-  //     setUserInput("");
-  //   }
-  // }, [userInput]);
-
   const onClick = (event) => {
     event.preventDefault();
-    if (event.target.value.match(/[0-9]/)) {
+    // If an equation was just completed, the next button press clears input and adds the most current event value
+    if (equationDone) {
+      updateEquationState(false);
+      setUserInput(event.target.value);
+    }
+    if (event.target.value.match(/[0-9]/) && !equationDone) {
       setUserInput(userInput + event.target.value);
     }
     if (event.target.value === ".") {
@@ -74,6 +78,8 @@ function App() {
           symbol: equation.symbol,
           secondNum: userInput,
         });
+        // An equation has been completed, update the state
+        updateEquationState(true);
       }
     }
   };
